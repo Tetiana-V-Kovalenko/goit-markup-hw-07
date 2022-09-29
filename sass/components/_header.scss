@@ -1,7 +1,7 @@
 header {
   border-bottom: $project-border;
 }
-.header__container {
+.header {
   @extend %container;
   display: flex;
   align-items: center;

@@ -1,13 +1,13 @@
+.portfolio {
+  @extend %section;
+}
+.portfolio__container {
+  @extend %container;
+}
 .filter {
   margin-bottom: 50px;
   @extend %flex-centered;
   gap: 8px;
-}
-.filter__section {
-  @extend %section;
-}
-.filter__container {
-  @extend %container;
 }
 .filter__title {
   &--hidden {

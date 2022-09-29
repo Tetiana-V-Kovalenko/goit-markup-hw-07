@@ -1,11 +1,11 @@
-.footer__container, .filter__container, .header__container {
+.footer__container, .portfolio__container, .header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.filter__section {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -349,7 +349,7 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.header__container {
+.header {
   display: flex;
   align-items: center;
 }
