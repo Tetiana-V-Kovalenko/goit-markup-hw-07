@@ -1,0 +1,33 @@
+.filter {
+  margin-bottom: 50px;
+  @extend %flex-centered;
+  gap: 8px;
+}
+.filter__section {
+  @extend %section;
+}
+.filter__container {
+  @extend %container;
+}
+.filter__title {
+  &--hidden {
+    display: none;
+  }
+}
+.filter__el {
+  padding: 6px 22px;
+  @extend %btn;
+  color: $base-color;
+  background-color: $employee-background-color;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  box-shadow: none;
+  &:hover,
+  :focus {
+    background-color: $active-color;
+    color: $white-text-color;
+    box-shadow: $special-shadow;
+  }
+}

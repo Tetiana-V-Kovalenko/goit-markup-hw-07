@@ -1,0 +1,64 @@
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.project__el {
+  width: 370px;
+  height: 404px;
+}
+
+.project__link {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  transition: box-shadow $transition-code;
+  &:hover,
+  :focus {
+    box-shadow: $project-shadow;
+  }
+}
+
+.project__img {
+  position: relative;
+  overflow: hidden;
+}
+.project__overflow {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: $white-text-color;
+  background: $overflow-background;
+  transition: transform $transition-code;
+  .project__link:hover &,
+  .project__link:focus & {
+    transform: translateY(0);
+  }
+}
+
+.project__title {
+  padding: 20px 24px;
+  background-color: $white-text-color;
+
+  border-left: $project-border;
+  border-right: $project-border;
+  border-bottom: $project-border;
+}
+.project__name {
+  margin-bottom: 4px;
+  @include special-font(700, 18px, 0.06em, 2, $base-color);
+}
+.project__subtitle {
+  font-size: 16px;
+  line-height: 1.875;
+  color: $base-color;
+}

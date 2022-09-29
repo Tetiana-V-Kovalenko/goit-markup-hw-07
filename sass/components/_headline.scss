@@ -1,0 +1,30 @@
+.headline {
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  //   height: 600px;
+  text-align: center;
+  background-color: $special-backsround-color;
+  background-image: linear-gradient($gradient-color, $gradient-color),
+    url(/images/bg.jpg);
+  @extend %background-image;
+}
+.headline__title {
+  margin: 0 auto 30px;
+  width: 696px;
+  @include special-font(900, 44px, 0.06em, 1.36, $white-text-color);
+  text-transform: uppercase;
+}
+.headline__btn {
+  width: 216px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @extend %btn;
+  &:hover,
+  :focus {
+    background-color: $order-background-color;
+  }
+}
