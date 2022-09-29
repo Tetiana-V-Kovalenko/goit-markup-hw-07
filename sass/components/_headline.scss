@@ -7,7 +7,7 @@
   text-align: center;
   background-color: $special-backsround-color;
   background-image: linear-gradient($gradient-color, $gradient-color),
-    url(/images/bg.jpg);
+    url(.../images/bg.jpg);
   @extend %background-image;
 }
 .headline__title {
